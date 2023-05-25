@@ -1,0 +1,483 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2000px;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+#main {
+
+}
+#navigation .search  {
+    float: right;
+}
+#navigation .bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 24px;
+}
+#navigation .bar i {
+    color: #fff;
+}
+#navigation .bar:hover {
+    background-color: #757575;
+    color: #000;
+}
+#navigation .search:hover a {
+    background-color: #f44336 !important;
+    color: #000;
+}
+#navigation, .subnav {
+    list-style-type: none;
+    cursor: pointer;
+}
+#navigation > li {
+    display: inline-block;
+}
+#navigation li {
+    position: relative;
+}
+#navigation > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+#navigation li a {
+    text-decoration: none;
+    line-height: 46.500px;
+    padding: 0 24px;
+    display: inline-block;
+}
+#navigation > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+#navigation .subnav li:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#navigation li:hover .subnav {
+    display: block;
+}
+#navigation .subnav {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 
+    0 4px 20px 0 rgba(0,0,0,0.19);
+}
+#navigation .subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38.5px;
+}
+#header {
+    height: 46.500px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+}
+#slide .text h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+#slide .text {
+    position: absolute;
+    text-align: center;
+    padding: 32px 16px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    color: #fff;
+}
+#slide .text p {
+    margin: 15px 0;
+}
+#slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    max-height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+}
+#slide img.active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+#slide {
+   margin-top: 46px; 
+   /* background: url(/assets/css/img/chicago.jpg) top center / cover no-repeat; */
+   position: relative;
+   padding-top: 50%;
+   overflow: hidden;
+}
+#content .theband {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 800px;
+    text-align: center;
+}
+#content .title {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 250;
+    letter-spacing: 4px;
+}
+#content .sub-title {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+#content .theband .paragraph {
+    margin: 15px 0;
+    text-align: justify !important;
+    font-size: 15px;
+    letter-spacing: -0.15px;
+}
+#content .table {
+    padding: 32px 0 !important;
+    overflow: hidden;
+}
+#content .pt {
+    float: left;
+    width: 33.333333%;
+}
+#content .name {
+    margin: 15px 0;
+}
+#content .pt-img {
+    width: 150px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+#content .bgblack {
+    background-color: #000;
+    color: #fff;
+}
+#content .tour-dates {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 800px;
+    text-align: center;
+}
+#content .month {
+    list-style-type: none;
+    background-color: #fff;
+    color: #757575;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+}
+#content .month li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+#content .tag {
+    padding: 2px 8px;
+    margin-left: 16px;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 5px;
+}
+#content .tag2 {
+    padding: 0 8px;
+    margin-right: 16px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+}
+#content .city-list {
+    padding: 32px 8px;
+    margin: 0 -16px;
+    overflow: hidden;
+    
+}
+#content .city {
+    float: left;
+    width: 33.333333%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+#content .city img {
+    width: 100%;
+}
+#content .infor-city {
+    background-color: #fff;
+    padding: 0.15px 16px;
+    margin-top: -8px;
+    color: #000;
+    text-align: left;
+}
+#content .infor-city p {
+    margin: 15px 0;
+}
+.opa{
+    opacity: 0.6;
+}
+#content .tour-dates .buy-tic {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+#content .tour-dates .buy-tic:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+#content .ticket-modal {
+    display: none;
+    padding-top: 100px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+#content .modal-content {
+    margin: auto;
+    background-color: #fff;
+    width: 600px;
+    position: relative;
+    animation: fadein 0.5s;
+}
+#content .modal-content header {
+    padding: 32px 16px;
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+}
+#content .modal-content .x-large {
+    background-color: #009688;
+    color: #fff;
+    border-style: none;
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#content .modal-content h2 {
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    font-size: 30px;
+}
+#content .modal-text {
+    padding: 0.15px 16px;
+}
+#content .modal-text input {
+    padding: 8px 8px;
+    width: 100%;
+}
+#content .modal-text p {
+    margin: 15px 0;
+}
+#content .modal-text .pay {
+    color: #fff;
+    background-color: #009688;
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px 16px;
+    border-style: none;
+    cursor: pointer;
+}
+#content #close {
+    padding: 8px 16px;
+    border-style: none;
+    background-color: #f44336;
+    margin: 16px 0;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#content .modal-content button:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+#content .modal-text .help {
+    float: right;
+}
+#content .modal-text a{
+    color: #2196F3;
+}
+.open {
+    display: block !important;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#content .contact {
+    text-align: center;
+    padding: 64px 16px; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .contact-content {
+    padding: 32px 0;
+    overflow: hidden;
+}
+#content .information {
+    margin-bottom: 16px;
+    float: left;
+    width: 49.9999%;
+    text-align: left;
+}
+#content .information i {
+    width: 30px;
+}
+#content .user {
+    width: 49.9999%;
+    float: left;
+}
+#content .user input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+#content .row-padding {
+    margin: 0 -8px 8px -8px;
+    overflow: hidden;
+}
+#content .half {
+    padding: 0 8px;
+    width: 49.99999%;
+    float: left;
+}
+#content .submit {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin: 16px 0;
+    display: inline-block;
+    padding:  8px 16px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    line-height: 22.5px;
+}
+#content .submit:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#content {
+    margin-left: auto;
+    margin-right: auto;
+}
+.map {
+    width: 100%;
+    filter: grayscale(50%);
+}
+#footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 64px 16px;
+    color: #000;
+}
+#footer i {
+    font-size: 24px;
+}
+#footer p {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+#footer i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.bar {
+    display: none;
+}
+@media (max-width: 600px) {
+    #navigation > li {
+        display: block;
+    }
+    .search  {
+        display: none !important;
+    }
+    .bar {
+        display: block !important;
+    }
+    #navigation li a {
+        display: block;
+    }
+    #navigation #pad {
+        
+        display: inline-block !important;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #navigation .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    #navigation .subnav a {
+        color: white;
+        padding: 5px 41px;
+    }
+    #slide .text {
+        display: none;
+    }
+    #content .pt {
+        width: 100%;
+    }
+    #content .pt-img {
+        width: 60%;
+    }
+    #content .city {
+        width: 100%;
+    }
+    #content .information {
+        width: 100%;
+        font-size: 18px;
+    }
+    #content .user {
+        width: 100%;
+    }
+    #content .half {
+        width: 100%;
+        padding: 8px;
+    }
+    #content .modal-text {
+        padding: 0.15px 14px;
+    }
+    #content .modal-content {
+        width: 96%;
+    }
+}
