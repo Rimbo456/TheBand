@@ -480,4 +480,7 @@ html {
     #content .modal-content {
         width: 96%;
     }
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
 }
